@@ -1,0 +1,304 @@
+/*Eric-Meyer Minimum CSS Reset*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+
+body{line-height:1}
+
+ol,ul{list-style:none}
+
+blockquote,q{quotes:none}
+
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+
+table{border-collapse:collapse;border-spacing:0}
+
+/*Global Styles*/
+html {
+    background: rgb(104,160,255);
+}
+
+body {
+    font-size: 16px;
+    font-family: times;
+    margin: 0 auto;
+    background: grey;
+}
+
+header {
+    background: rgb(22,90,204);
+    width: inherit;
+    position: fixed;
+    top: 0;
+}
+
+ul {
+    font-family: Courier New;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+}
+
+li {
+    float:left;
+}
+
+.headerH1{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    width: 58.33%;
+}
+
+.headerA{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 15%;
+}
+
+header li.headerA:hover {
+    background-color: #000000;
+    
+}
+
+div.pageBody {
+    padding: 3.33%;
+    width: 93.33%;
+    margin-bottom: -1.66%;
+}
+
+section {
+    clear:both;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1.66%;
+    margin-bottom: 1.66%;
+}
+
+article {
+    padding: 1.786%;
+    background: rgb(27,112,255);
+    padding-bottom: 1000em;
+    margin-bottom: -1000em;
+}
+
+aside {
+    padding: 1.786%;
+    background: rgb(27,112,255);
+    padding-bottom: 1000em;
+    margin-bottom: -1000em;
+}
+
+footer {
+    width: 100%;
+    background: rgb(22,90,204);
+    clear: both;
+    height: 32px;
+}
+
+.footerH1 {
+    display: block;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    height: 16px;
+    padding: 8px 3.33%;
+    width: 56.66%;
+}
+
+.footerA {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid black;
+}
+
+h3 {
+    padding: 8px 0;
+    width: 94.44%;
+}
+
+p {
+    padding: 1.5%;
+}
+
+textarea{
+    height: 48px;
+}
+
+/*Styles that Change*/
+
+/*Mobile*/
+@media only screen and (max-width: 480px){
+    body{
+        width: 100%;
+        
+    }
+    
+/*Column Selectors*/    
+    .col1 {   
+        width: 96.464%;
+    }
+
+    .col2 {
+        width: 96.464%;
+    }
+/*Response Selectors*/    
+    h3{
+        margin: 0 1.5%;
+    }
+    
+    textarea{
+        margin: 0 1.5%;
+        width: 94.9%;
+    }
+    
+/*Header/Footer Selectors*/   
+    .footerA {
+        font-size: 8px;
+        height: 8px;
+        padding: 12px .833%;
+        width: 16.66%;
+    }
+    
+    header {
+        height: 48px;
+    }
+
+    .headerH1{
+        padding: 12px 0;
+        font-size: 24px;
+        padding-right: 1.66%;
+        padding-left: 3.33%;
+    }
+    
+    .headerA{
+        font-size: 12px;
+        padding: 18px 1.66%;
+    }
+    
+    html{
+        padding-top: 48px;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        width: 95%;
+    }
+    
+/*Column Selectors*/
+    .col1 {
+        float: left;
+        width: 57.14%;
+    }
+
+    .col2 {
+        float: right;
+        width: 32.14%;
+    }
+    
+/*Response Selectors*/
+    h3{
+        margin: 0 2.77%;
+    }
+    
+    textarea{
+        margin: 0 2.77%;
+        width: 92.36%;
+    }
+    
+/*Header/Footer Selectors*/
+    .footerA {
+        font-size: 12px;
+        height: 12px;
+        padding: 10px .833%;
+        width: 16.66%;
+    }
+    
+    header {
+        height: 48px;
+    }
+
+    .headerH1{
+        padding: 12px 0;
+        font-size: 24px;
+        padding-right: 1.66%;
+        padding-left: 3.33%;
+    }
+    
+    .headerA{
+        font-size: 12px;
+        padding: 18px 1.66%;
+    }
+    
+    html{
+        padding-top: 48px;
+    }
+}
+
+
+/*Desktop*/
+@media only screen and (min-width: 769px){
+    
+    body{
+        width: 66.66%;
+    }
+
+/*Column Selectors*/
+    .col1 {
+        float: left;
+        width: 57.14%;
+    }
+
+    .col2 {
+        float: right;
+        width: 32.14%;
+    }
+ 
+/*Response Selectors*/
+    h3{
+        margin: 0 2.77%;
+    }
+    
+    textarea{
+        margin: 0 2.77%;
+        width: 92.36%;
+    }
+ 
+/*Header/Footer Selectors*/    
+    .footerA {
+        font-size: 12px;
+        height: 12px;
+        padding: 10px .833%;
+        width: 16.66%;
+    }
+    
+    header {
+        height: 64px;
+    }
+    
+    .headerH1{
+        padding: 16px 0;
+        font-size: 32px;
+        padding-right: 1.66%;
+        padding-left: 3.33%;
+    }
+    
+    .headerA{
+        font-size: 16px;
+        padding: 24px 1.66%;
+    }
+    
+    html{
+        padding-top: 64px;
+    }
+}
